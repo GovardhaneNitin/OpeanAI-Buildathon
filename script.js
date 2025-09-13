@@ -1,11 +1,14 @@
-// Enhanced smooth scrolling
-document.querySelector(".cta-button").addEventListener("click", function (e) {
-  e.preventDefault();
-  document.querySelector("#demo").scrollIntoView({
-    behavior: "smooth",
-    block: "start",
+// Enhanced smooth scrolling (guard if CTA exists)
+const cta = document.querySelector(".cta-button");
+if (cta) {
+  cta.addEventListener("click", function (e) {
+    e.preventDefault();
+    const demo = document.querySelector("#demo");
+    if (demo) {
+      demo.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   });
-});
+}
 
 // Intersection Observer for animations
 const observerOptions = {
@@ -23,7 +26,9 @@ const observer = new IntersectionObserver(function (entries) {
 
 // Observe elements for animation
 document
-  .querySelectorAll(".problem-card, .feature-card, .step, .api-card")
+  .querySelectorAll(
+    ".problem-card, .feature-card, .step, .api-card, .team-card, .team-brand, .chip, .pill"
+  )
   .forEach((el) => {
     el.style.opacity = "0";
     el.style.transform = "scale(0.9)";
@@ -41,9 +46,35 @@ document.querySelectorAll(".ppt-button").forEach((button) => {
 
 // Add loading states and micro-interactions
 document
-  .querySelectorAll(".problem-card, .feature-card, .step, .api-card")
+  .querySelectorAll(
+    ".problem-card, .feature-card, .step, .api-card, .team-card"
+  )
   .forEach((card) => {
     card.addEventListener("mouseenter", function () {
       this.style.transition = "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)";
     });
   });
+
+// Team card tilt + spotlight interaction
+document.querySelectorAll(".team-card[data-tilt]").forEach((card) => {
+  const maxTilt = 8;
+  card.addEventListener("mousemove", (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const px = (x / rect.width) * 2 - 1; // -1..1
+    const py = (y / rect.height) * 2 - 1; // -1..1
+    const rx = (-py * maxTilt).toFixed(2) + "deg";
+    const ry = (px * maxTilt).toFixed(2) + "deg";
+    card.style.setProperty("--rx", rx);
+    card.style.setProperty("--ry", ry);
+    card.style.setProperty("--mx", `${x}px`);
+    card.style.setProperty("--my", `${y}px`);
+  });
+  card.addEventListener("mouseleave", () => {
+    card.style.setProperty("--rx", "0deg");
+    card.style.setProperty("--ry", "0deg");
+    card.style.removeProperty("--mx");
+    card.style.removeProperty("--my");
+  });
+});

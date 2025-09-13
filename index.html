@@ -7,190 +7,295 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Suraksha-Path</h1>
-        <p class="tagline">
-          Next-Generation AI-Powered Emergency Response System
-        </p>
-        <a href="#demo" class="cta-button">Watch Live Demo →</a>
-      </div>
-    </section>
-
     <!-- Problem Statement -->
     <section class="section problem">
-      <h2>Critical Healthcare Challenge</h2>
+      <h2>Problem Statement</h2>
       <p class="section-subtitle">
-        Every second counts in emergency medical response. Current systems are
-        failing patients when they need help most.
+        Critical minutes are lost when ambulances get stuck in traffic — a gap
+        in real-time, city-wide coordination costs lives.
       </p>
       <div class="problem-grid">
         <div class="problem-card">
-          <div class="problem-icon">🚨</div>
-          <h3>Traffic Bottlenecks</h3>
+          <div class="problem-icon">⚠️</div>
+          <h3>The Challenge</h3>
           <p>
-            Emergency vehicles in India lose 15-20 critical minutes navigating
-            through congested traffic, directly impacting patient survival rates
-            and treatment outcomes.
+            In India alone, thousands of emergency cases lose critical minutes
+            in transit because ambulances get stuck in traffic. Even with
+            sirens, vehicles often don’t move quickly enough due to lack of
+            real-time coordination.
           </p>
         </div>
         <div class="problem-card">
-          <div class="problem-icon">⚡</div>
-          <h3>Multi-Stakeholder Impact</h3>
-          <p>
-            Patients face delayed care, paramedics struggle with route
-            optimization, hospitals receive inadequate preparation time, and
-            traffic systems lack emergency integration.
-          </p>
+          <div class="problem-icon">👥</div>
+          <h3>Who is Affected</h3>
+          <ul
+            style="
+              color: #cbd5e1;
+              line-height: 1.7;
+              text-align: left;
+              max-width: 50ch;
+              margin: 0 auto;
+            "
+          >
+            <li>
+              Patients in emergency care (heart attacks, accidents, trauma
+              cases).
+            </li>
+            <li>Ambulance drivers, who face unpredictable delays.</li>
+            <li>
+              Hospitals, as treatment gets delayed during the “golden hour.”
+            </li>
+          </ul>
         </div>
         <div class="problem-card">
-          <div class="problem-icon">💔</div>
-          <h3>Life-Critical Consequences</h3>
+          <div class="problem-icon">⏱️</div>
+          <h3>Why It Matters</h3>
           <p>
-            Research shows that every minute of delay in emergency response
-            increases mortality risk by 8-10%, making efficient routing a matter
-            of life and death.
+            Every minute of delay can reduce survival chances. Despite smart
+            city initiatives, there’s no scalable, AI-driven system to
+            dynamically clear ambulance routes and alert traffic systems in real
+            time.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Solution -->
+    <!-- Solution – Suraksha-Path -->
     <section class="section solution">
-      <h2>Intelligent Solution: Suraksha-Path</h2>
-      <p class="section-subtitle">
-        Revolutionary AI-IoT integration that transforms emergency response
-        through predictive analytics, real-time optimization, and seamless
-        multi-system coordination.
+      <div style="text-align: center; margin-bottom: 2.5rem">
+        <span
+          style="
+            display: inline-block;
+            font-size: 3.2rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            background: linear-gradient(
+              90deg,
+              #06b6d4 0%,
+              #0891b2 60%,
+              #0ea5e9 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 4px 24px rgba(6, 182, 212, 0.25));
+          "
+        >
+          Suraksha-Path
+        </span>
+        <span class="ambulance-icon" aria-hidden="true">🚑</span>
+        <div
+          style="
+            font-size: 1.3rem;
+            color: #cbd5e1;
+            font-weight: 500;
+            margin-top: 0.5rem;
+          "
+        >
+          AI + IoT Powered Smart Ambulance Traffic Management System
+        </div>
+      </div>
+      <p class="section-subtitle" style="margin-top: -1.5rem">
+        Designed to predict, prioritize, and protect lives in every emergency.
       </p>
-
       <div class="features-grid">
         <div class="feature-card">
-          <h3>🧠 Predictive AI Engine</h3>
-          <p>
-            Advanced machine learning algorithms analyze traffic patterns,
-            weather conditions, and historical data to predict optimal routes
-            with 95% accuracy.
-          </p>
+          <h3>Idea</h3>
+          <ul
+            style="
+              color: #cbd5e1;
+              line-height: 1.7;
+              text-align: left;
+              max-width: 60ch;
+              margin: 0 auto;
+            "
+          >
+            <li>
+              Predicts and clears optimal routes for ambulances in real time.
+            </li>
+            <li>
+              Sends automatic traffic light overrides to ensure a “green
+              corridor.”
+            </li>
+            <li>Provides hospitals with live patient + ETA updates.</li>
+          </ul>
         </div>
         <div class="feature-card">
-          <h3>🚦 Smart Traffic Integration</h3>
-          <p>
-            Real-time traffic light control and dynamic signal optimization
-            creates clear corridors for emergency vehicles automatically.
-          </p>
+          <h3>How It Works</h3>
+          <ul
+            style="
+              color: #cbd5e1;
+              line-height: 1.7;
+              text-align: left;
+              max-width: 60ch;
+              margin: 0 auto;
+            "
+          >
+            <li>Ambulance IoT device streams location + status.</li>
+            <li>
+              OpenAI-powered assistant analyzes traffic, predicts the fastest
+              path, and communicates to nearby vehicles (via app notifications)
+              and traffic signals.
+            </li>
+            <li>
+              Hospital dashboard receives real-time ETA and patient updates.
+            </li>
+          </ul>
         </div>
         <div class="feature-card">
-          <h3>🏥 Hospital Command Center</h3>
-          <p>
-            Comprehensive dashboard provides hospitals with patient vitals, ETA
-            predictions, and resource preparation recommendations.
-          </p>
-        </div>
-        <div class="feature-card">
-          <h3>📱 Intelligent Notifications</h3>
-          <p>
-            Multi-channel alert system with geolocation targeting, multilingual
-            support, and personalized routing suggestions for civilian vehicles.
-          </p>
-        </div>
-        <div class="feature-card">
-          <h3>🌐 Scalable Architecture</h3>
-          <p>
-            Cloud-native system design enables integration with police, fire
-            services, disaster management, and municipal traffic systems.
-          </p>
-        </div>
-        <div class="feature-card">
-          <h3>📊 Performance Analytics</h3>
-          <p>
-            Real-time dashboards with predictive insights, response time
-            optimization, and comprehensive performance metrics for continuous
-            improvement.
-          </p>
+          <h3>Uniqueness</h3>
+          <ul
+            style="
+              color: #cbd5e1;
+              line-height: 1.7;
+              text-align: left;
+              max-width: 60ch;
+              margin: 0 auto;
+            "
+          >
+            <li>
+              Combines
+              <strong
+                >traffic IoT + predictive AI + natural language alerts</strong
+              >
+              (not just navigation).
+            </li>
+            <li>
+              Humanizes alerts — drivers nearby get
+              <em>personalized, context-aware instructions</em> like “Move left,
+              ambulance 200m behind you.”
+            </li>
+            <li>
+              Extensible to police/fire services, forming a broader
+              <strong>public safety infrastructure</strong>.
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- How It Works -->
-    <section class="section how-it-works">
-      <h2>System Architecture & Workflow</h2>
-      <p class="section-subtitle">
-        Seamless integration of IoT sensors, AI processing, and smart city
-        infrastructure for optimal emergency response coordination.
-      </p>
-      <div class="steps">
-        <div class="step">
-          <div class="step-number">1</div>
-          <h3>IoT Data Acquisition</h3>
-          <p>
-            Advanced IoT devices continuously monitor ambulance location, speed,
-            patient vitals, and emergency classification, streaming data to our
-            central processing hub.
-          </p>
-        </div>
-        <div class="step">
-          <div class="step-number">2</div>
-          <h3>AI Route Optimization</h3>
-          <p>
-            Machine learning algorithms process real-time traffic data, weather
-            conditions, and historical patterns to calculate the most efficient
-            route with dynamic re-routing capabilities.
-          </p>
-        </div>
-        <div class="step">
-          <div class="step-number">3</div>
-          <h3>Smart City Integration</h3>
-          <p>
-            System automatically communicates with traffic management systems,
-            sends targeted alerts to nearby vehicles, and coordinates with
-            municipal infrastructure.
-          </p>
-        </div>
-        <div class="step">
-          <div class="step-number">4</div>
-          <h3>Hospital Preparation</h3>
-          <p>
-            Comprehensive hospital dashboard receives patient information,
-            accurate ETA predictions, and recommended resource allocation for
-            optimal preparation.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- OpenAI APIs -->
+    <!-- Use of OpenAI APIs -->
     <section class="section openai-apis">
-      <h2>Powered by OpenAI Technology</h2>
+      <h2>Use of OpenAI APIs</h2>
       <p class="section-subtitle">
-        Leveraging cutting-edge AI capabilities to deliver intelligent,
-        adaptive, and multilingual emergency response solutions.
+        OpenAI enables real-time reasoning, voice-first inputs, and vivid visual
+        intelligence across the Suraksha-Path pipeline.
       </p>
+      <div class="api-pipeline">
+        <span class="chip">IoT</span>
+        <span class="chip">Data Processing</span>
+        <span class="chip accent">OpenAI</span>
+        <span class="chip">Traffic Systems</span>
+        <span class="chip">Hospital & Apps</span>
+      </div>
       <div class="api-grid">
         <div class="api-card">
-          <h3>GPT-4o → Advanced Reasoning</h3>
-          <p>
-            Real-time traffic analysis, contextual decision-making, multilingual
-            communication, and adaptive route optimization powered by
-            state-of-the-art language understanding.
-          </p>
+          <div class="api-card-header">
+            <div class="api-icon" aria-hidden="true">🧠</div>
+            <h3>GPT-4o (Core Brain)</h3>
+          </div>
+          <ul
+            style="
+              color: #cbd5e1;
+              line-height: 1.7;
+              text-align: left;
+              max-width: 60ch;
+              margin: 0 auto;
+            "
+          >
+            <li>
+              Real-time reasoning: personalized instructions for vehicles and
+              dynamic route explanations for ambulance drivers.
+            </li>
+            <li>
+              Multi-language support to reach local drivers (Hindi, Marathi,
+              Telugu, etc.).
+            </li>
+          </ul>
+          <div class="api-tags">
+            <span class="pill">Reasoning</span>
+            <span class="pill">Multilingual</span>
+            <span class="pill">Routing Context</span>
+          </div>
         </div>
         <div class="api-card">
-          <h3>Whisper → Voice Intelligence</h3>
-          <p>
-            Hands-free voice commands for paramedics, real-time patient status
-            updates, multilingual voice processing, and emergency communication
-            transcription.
-          </p>
+          <div class="api-card-header">
+            <div class="api-icon" aria-hidden="true">🎙️</div>
+            <h3>Whisper</h3>
+          </div>
+          <ul
+            style="
+              color: #cbd5e1;
+              line-height: 1.7;
+              text-align: left;
+              max-width: 60ch;
+              margin: 0 auto;
+            "
+          >
+            <li>
+              Ambulance staff use voice inputs like “patient is critical, need
+              fastest route to XYZ hospital”.
+            </li>
+            <li>
+              Transcribes and converts to structured commands for the system.
+            </li>
+          </ul>
+          <div class="api-tags">
+            <span class="pill">Voice</span>
+            <span class="pill">Transcription</span>
+            <span class="pill">Hands‑free</span>
+          </div>
         </div>
         <div class="api-card">
-          <h3>DALL·E → Visual Analytics</h3>
-          <p>
-            Dynamic traffic visualization, real-time heatmap generation,
-            emergency awareness graphics, and intuitive dashboard visualizations
-            for enhanced situational awareness.
-          </p>
+          <div class="api-card-header">
+            <div class="api-icon" aria-hidden="true">🖼️</div>
+            <h3>DALL·E</h3>
+          </div>
+          <ul
+            style="
+              color: #cbd5e1;
+              line-height: 1.7;
+              text-align: left;
+              max-width: 60ch;
+              margin: 0 auto;
+            "
+          >
+            <li>
+              Generates <strong>visual route heatmaps</strong> and alert posters
+              for public awareness campaigns.
+            </li>
+          </ul>
+          <div class="api-tags">
+            <span class="pill">Visualization</span>
+            <span class="pill">Heatmaps</span>
+            <span class="pill">Awareness</span>
+          </div>
+        </div>
+        <div class="api-card">
+          <div class="api-card-header">
+            <div class="api-icon" aria-hidden="true">🔗</div>
+            <h3>Integration</h3>
+          </div>
+          <ul
+            style="
+              color: #cbd5e1;
+              line-height: 1.7;
+              text-align: left;
+              max-width: 60ch;
+              margin: 0 auto;
+            "
+          >
+            <li>
+              APIs embedded in the pipeline: IoT → Data Processing → OpenAI
+              (reasoning + voice/text/visual) → Outputs to traffic systems and
+              user apps.
+            </li>
+          </ul>
+          <div class="api-tags">
+            <span class="pill">Pipelines</span>
+            <span class="pill">IoT</span>
+            <span class="pill">Smart City</span>
+          </div>
         </div>
       </div>
     </section>
@@ -243,25 +348,82 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-content">
-        <h3>Suraksha-Path Development Team</h3>
-        <p><strong>Project Lead:</strong> [Your Name]</p>
-        <p><strong>Team Members:</strong> [Team Member Names]</p>
-        <p><strong>Built for:</strong> [Hackathon Name] 2024</p>
-        <p style="margin-top: 1rem; opacity: 0.8">
-          Transforming emergency healthcare through intelligent technology
-        </p>
-        <div class="social-links">
-          <a href="#">📁 GitHub Repository</a>
-          <a href="#">💼 LinkedIn</a>
-          <a href="#">🐦 Twitter</a>
-          <a href="#">🎯 Live Demo</a>
-          <a href="#">📧 Contact Team</a>
+    <!-- Team Section -->
+    <section class="section team">
+      <h2>Meet the Team</h2>
+      <div class="team-brand">
+        <span class="team-badge">TECH‑MITians</span>
+        <span class="team-name">T E C H - M I T i a n s</span>
+        <div class="team-tagline">Building life-saving tech with purpose</div>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card lead" data-tilt>
+          <span class="ribbon">Lead</span>
+          <div class="avatar" aria-hidden="true">👨‍✈️</div>
+          <p class="name">Nitin Govardhane</p>
+          <p class="role">Project Lead & System Architect</p>
+          <div class="skills">
+            <span class="pill">System Design</span>
+            <span class="pill">Architecture</span>
+            <span class="pill">Leadership</span>
+          </div>
+          <div class="socials">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="GitHub">gh</a>
+          </div>
+        </div>
+
+        <div class="team-card" data-tilt>
+          <span class="ribbon alt">Member</span>
+          <div class="avatar" aria-hidden="true">👩‍💻</div>
+          <p class="name">Vedanti Lakade</p>
+          <p class="role">Backend & IoT Integration</p>
+          <div class="skills">
+            <span class="pill">Node.js</span>
+            <span class="pill">IoT</span>
+            <span class="pill">APIs</span>
+          </div>
+          <div class="socials">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="GitHub">gh</a>
+          </div>
+        </div>
+
+        <div class="team-card" data-tilt>
+          <span class="ribbon alt">Member</span>
+          <div class="avatar" aria-hidden="true">🧠</div>
+          <p class="name">Kushagra Goswami</p>
+          <p class="role">AI/ML & OpenAI Pipelines</p>
+          <div class="skills">
+            <span class="pill">AI/ML</span>
+            <span class="pill">OpenAI</span>
+            <span class="pill">Python</span>
+          </div>
+          <div class="socials">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="GitHub">gh</a>
+          </div>
+        </div>
+
+        <div class="team-card" data-tilt>
+          <span class="ribbon alt">Member</span>
+          <div class="avatar" aria-hidden="true">🎨</div>
+          <p class="name">Rutuja Jadhav</p>
+          <p class="role">Frontend & UX</p>
+          <div class="skills">
+            <span class="pill">React</span>
+            <span class="pill">UX</span>
+            <span class="pill">Animations</span>
+          </div>
+          <div class="socials">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="GitHub">gh</a>
+          </div>
         </div>
       </div>
-    </footer>
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>
