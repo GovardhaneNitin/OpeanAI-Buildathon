@@ -308,13 +308,20 @@
         comprehensive feature walkthrough.
       </p>
       <div class="video-container">
-        <div class="video-placeholder">
-          <div style="font-size: 4rem">🎥</div>
-          <div>Comprehensive Demo Video</div>
-          <small style="opacity: 0.7"
-            >Replace this placeholder with your actual video embed</small
-          >
-        </div>
+        <video
+          class="video-player"
+          src="Suraksha_Path.mp4"
+          controls
+          preload="metadata"
+          poster=""
+          style="
+            width: 100%;
+            border-radius: 24px;
+            border: 2px solid rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.03);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+          "
+        ></video>
       </div>
     </section>
 
@@ -328,21 +335,33 @@
 
       <div class="ppt-container">
         <div class="ppt-embed">
-          <div class="ppt-placeholder">
-            <div style="font-size: 4rem">📊</div>
-            <div>Interactive Presentation Slides</div>
-            <small style="opacity: 0.7"
-              >Replace with embedded PPT iframe (Google Slides, SlideShare,
-              etc.)</small
-            >
-          </div>
+          <object
+            data="Suraksha-Path.pdf#toolbar=1&navpanes=1&scrollbar=1"
+            type="application/pdf"
+            width="100%"
+            style="
+              aspect-ratio: 16/10;
+              border-radius: 16px;
+              border: 2px solid rgba(255, 255, 255, 0.12);
+              background: rgba(255, 255, 255, 0.03);
+            "
+          >
+            <embed
+              src="Suraksha-Path.pdf#toolbar=1&navpanes=1&scrollbar=1"
+              type="application/pdf"
+            />
+            <p style="padding: 1rem; color: #cbd5e1">
+              Your browser can’t display embedded PDFs.
+              <a href="Suraksha-Path.pdf" style="color: #06b6d4"
+                >Download the presentation</a
+              >.
+            </p>
+          </object>
 
           <div class="ppt-controls">
-            <button class="ppt-button">⏮️ Previous</button>
-            <button class="ppt-button">▶️ Play/Pause</button>
-            <button class="ppt-button">⏭️ Next</button>
-            <button class="ppt-button secondary">🔍 Fullscreen</button>
-            <a href="#" class="ppt-button secondary">📥 Download PPT</a>
+            <a href="Suraksha-Path.pdf" download class="ppt-button secondary"
+              >📥 Download PPT</a
+            >
           </div>
         </div>
       </div>
@@ -369,8 +388,20 @@
             <span class="pill">Leadership</span>
           </div>
           <div class="socials">
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="GitHub">gh</a>
+            <a
+              href="https://www.linkedin.com/in/nitingovardhane/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              >in</a
+            >
+            <a
+              href="https://github.com/GovardhaneNitin/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              >gh</a
+            >
           </div>
         </div>
 
@@ -385,8 +416,20 @@
             <span class="pill">APIs</span>
           </div>
           <div class="socials">
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="GitHub">gh</a>
+            <a
+              href="https://www.linkedin.com/in/vedantilakade"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              >in</a
+            >
+            <a
+              href="https://github.com/vedantilakade"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              >gh</a
+            >
           </div>
         </div>
 
@@ -417,8 +460,20 @@
             <span class="pill">Animations</span>
           </div>
           <div class="socials">
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="GitHub">gh</a>
+            <a
+              href="https://www.linkedin.com/in/rutuja-jadhav30"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              >in</a
+            >
+            <a
+              href="https://github.com/RutuJadhav30"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              >gh</a
+            >
           </div>
         </div>
       </div>
